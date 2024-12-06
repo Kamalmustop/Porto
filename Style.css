@@ -41,7 +41,6 @@ body {
 .navbar a:hover,
 .navbar a.active {
     color: #576CBC;
-    font-size: 20px;
 }
 
 .Home {
@@ -50,19 +49,87 @@ body {
     height : 60vh;
     color: #ffffff;
     padding: 0 10%;
+    margin-top: 80px;
 }
 
 .Home-content {
    max-width: 600px;
 }
 .Home-content h1 {
-    font-size: 50px;
+    font-size: 58px;
     font-weight: 700;
    margin-bottom: 20px;
 }
 .Home-content h3 {
     font-size: 20px;
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: #A5D7E8;
+}
+.Home-content p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: -10px;
+}
+
+.Home-content .Buttonbox {
+    width: 345px;
+    height: 50px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Buttonbox a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #A5D7E8;
+    border: 4px solid #A5D7E8;
+    border-radius: 7px;
+    color: #0B2447;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+.Buttonbox a:hover {
+    color: #A5D7E8;
+}
+
+.Buttonbox a:nth-child(2) {
+    background: transparent;
+    Color: #A5D7E8;
+}
+
+.Buttonbox a:nth-child(2):hover {
+    color: #0B2447;
+}
+
+.Buttonbox a:nth-child(2)::before {
+    background: #A5D7E8;
+}
+
+
+.Buttonbox a::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #0B2447;
+    z-index: -1;
+    transition: 0.7s;
+}
+
+.Buttonbox a:hover::before {
+    width: 100%;
 }
